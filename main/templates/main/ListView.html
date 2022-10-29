@@ -1,0 +1,13 @@
+<h1>List of Expenses</h1>
+<table>
+	<tr>
+		<th>Expense</th>
+	</tr>
+	{% for expenses in expense%}
+	<tr>
+		<td>{{expenses.expense}}</td>
+	</tr>
+	{% empty%}
+	<h3>No expenses in list</h3>
+	{% endfor %}
+</table>
